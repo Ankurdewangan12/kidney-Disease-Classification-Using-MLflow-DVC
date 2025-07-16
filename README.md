@@ -25,7 +25,7 @@ https://github.com/Ankurdewangan12/kidney-Disease-Classification-Using-MLflow-DV
 ### STEP 01- Create a conda environment after opening the repository
 
 ```bash
-conda create -n kidney python=3.8 -y
+conda create -n kidney python=3.10 -y
 ```
 
 ```bash
