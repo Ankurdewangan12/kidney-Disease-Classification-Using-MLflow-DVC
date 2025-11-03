@@ -703,3 +703,41 @@ x============x]
 [2025-11-03 19:05:20,467:INFO:main:>>>>>> Stage Evaluation stage completed <<<<<<
 
 x============x]
+[2025-11-04 00:00:47,983:INFO:main:>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2025-11-04 00:00:48,004:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-04 00:00:48,008:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-04 00:00:48,010:INFO:common: created directories at: artifacts]
+[2025-11-04 00:00:48,011:INFO:common: created directories at: artifacts/data_ingestion]
+[2025-11-04 00:00:48,012:INFO:data_ingestion:downloading data from https://drive.google.com/file/d/1Kc6a9rrEW_PlIsf6SOKn_5hRyy1xztWT/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-04 00:00:56,077:INFO:data_ingestion:download data from https://drive.google.com/file/d/1Kc6a9rrEW_PlIsf6SOKn_5hRyy1xztWT/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-04 00:00:56,825:INFO:main:>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x============x]
+[2025-11-04 00:00:56,825:INFO:main:*******************]
+[2025-11-04 00:00:56,825:INFO:main:>>>>>> Stage Prepare base model started <<<<<<]
+[2025-11-04 00:00:56,825:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-04 00:00:56,825:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-04 00:00:56,841:INFO:common: created directories at: artifacts]
+[2025-11-04 00:00:56,841:INFO:common: created directories at: artifacts/prepare_base_model]
+[2025-11-04 00:00:57,494:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-04 00:00:57,775:INFO:main:>>>>>> Stage Prepare base model completed <<<<<<
+
+x============x]
+[2025-11-04 00:00:57,775:INFO:main:********************************]
+[2025-11-04 00:00:57,775:INFO:main:>>>>>> Stage Training started <<<<<<]
+[2025-11-04 00:00:57,785:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-04 00:00:57,785:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-04 00:00:57,785:INFO:common: created directories at: artifacts]
+[2025-11-04 00:00:57,785:INFO:common: created directories at: artifacts\training]
+[2025-11-04 02:36:57,663:INFO:main:>>>>>> Stage Training completed <<<<<<
+
+x============x]
+[2025-11-04 02:36:57,663:INFO:main:********************************]
+[2025-11-04 02:36:57,663:INFO:main:>>>>>> Stage Evaluation stage started <<<<<<]
+[2025-11-04 02:36:57,668:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-04 02:36:57,668:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-04 02:36:57,668:INFO:common: created directories at: artifacts]
+[2025-11-04 02:37:09,157:INFO:common:json file saved at: scores.json]
+[2025-11-04 02:39:19,793:INFO:main:>>>>>> Stage Evaluation stage completed <<<<<<
+
+x============x]
