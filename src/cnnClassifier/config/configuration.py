@@ -68,7 +68,7 @@ class ConfigurationManager:
         return training_config
     
 
-def get_evaluation_config(self) -> EvaluationConfig:
+    def get_evaluation_config(self) -> EvaluationConfig:
         eval_config = EvaluationConfig(
             path_of_model="artifacts/training/model.h5",
             training_data="artifacts/data_ingestion/kidney-ct-scan-image",

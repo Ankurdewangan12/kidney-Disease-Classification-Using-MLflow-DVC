@@ -266,3 +266,440 @@ x============x]
 [2025-11-03 15:25:36,802:INFO:common:json file saved at: scores.json]
 [2025-11-03 15:25:44,371:WARNING:save:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
 [2025-11-03 15:25:46,318:INFO:builder_impl:Assets written to: C:\Users\ANKUR\AppData\Local\Temp\tmp3vejl8he\model\data\model\assets]
+[2025-11-03 16:29:00,578:INFO:main:>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2025-11-03 16:29:00,595:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 16:29:00,612:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 16:29:00,612:INFO:common: created directories at: artifacts]
+[2025-11-03 16:29:00,625:INFO:common: created directories at: artifacts/data_ingestion]
+[2025-11-03 16:29:00,625:INFO:data_ingestion:downloading data from https://drive.google.com/file/d/1Kc6a9rrEW_PlIsf6SOKn_5hRyy1xztWT/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-03 16:29:08,769:INFO:data_ingestion:download data from https://drive.google.com/file/d/1Kc6a9rrEW_PlIsf6SOKn_5hRyy1xztWT/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-03 16:29:09,422:INFO:main:>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x============x]
+[2025-11-03 16:29:09,422:INFO:main:*******************]
+[2025-11-03 16:29:09,422:INFO:main:>>>>>> Stage Prepare base model started <<<<<<]
+[2025-11-03 16:29:09,422:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 16:29:09,422:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 16:29:09,422:INFO:common: created directories at: artifacts]
+[2025-11-03 16:29:09,422:INFO:common: created directories at: artifacts/prepare_base_model]
+[2025-11-03 16:29:09,944:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-03 16:29:10,232:INFO:main:>>>>>> Stage Prepare base model completed <<<<<<
+
+x============x]
+[2025-11-03 16:29:10,232:INFO:main:********************************]
+[2025-11-03 16:29:10,232:INFO:main:>>>>>> Stage Training started <<<<<<]
+[2025-11-03 16:29:10,236:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 16:29:10,240:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 16:29:10,240:INFO:common: created directories at: artifacts]
+[2025-11-03 16:29:10,240:INFO:common: created directories at: artifacts\training]
+[2025-11-03 16:32:38,432:INFO:main:>>>>>> Stage Training completed <<<<<<
+
+x============x]
+[2025-11-03 16:32:38,432:INFO:main:********************************]
+[2025-11-03 16:32:38,432:INFO:main:>>>>>> Stage Evaluation stage started <<<<<<]
+[2025-11-03 16:32:38,448:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 16:32:38,448:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 16:32:38,448:INFO:common: created directories at: artifacts]
+[2025-11-03 16:32:38,448:ERROR:main:'ConfigurationManager' object has no attribute 'get_evaluation_config']
+Traceback (most recent call last):
+  File "C:\ankur\DL end 2 end project\kidney-Disease-Classification-Using-MLflow-DVC\main.py", line 48, in <module>
+    model_trainer.main()
+  File "c:\ankur\dl end 2 end project\kidney-disease-classification-using-mlflow-dvc\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 14, in main
+    eval_config = config.get_evaluation_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_evaluation_config'
+[2025-11-03 16:38:17,751:INFO:main:>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2025-11-03 16:38:17,759:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 16:38:17,759:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 16:38:17,759:INFO:common: created directories at: artifacts]
+[2025-11-03 16:38:17,759:INFO:common: created directories at: artifacts/data_ingestion]
+[2025-11-03 16:38:17,759:INFO:data_ingestion:downloading data from https://drive.google.com/file/d/1Kc6a9rrEW_PlIsf6SOKn_5hRyy1xztWT/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-03 16:38:24,895:INFO:data_ingestion:download data from https://drive.google.com/file/d/1Kc6a9rrEW_PlIsf6SOKn_5hRyy1xztWT/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-03 16:38:25,501:INFO:main:>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x============x]
+[2025-11-03 16:38:25,509:INFO:main:*******************]
+[2025-11-03 16:38:25,509:INFO:main:>>>>>> Stage Prepare base model started <<<<<<]
+[2025-11-03 16:38:25,509:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 16:38:25,509:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 16:38:25,509:INFO:common: created directories at: artifacts]
+[2025-11-03 16:38:25,509:INFO:common: created directories at: artifacts/prepare_base_model]
+[2025-11-03 16:38:25,945:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-03 16:38:26,252:INFO:main:>>>>>> Stage Prepare base model completed <<<<<<
+
+x============x]
+[2025-11-03 16:38:26,252:INFO:main:********************************]
+[2025-11-03 16:38:26,252:INFO:main:>>>>>> Stage Training started <<<<<<]
+[2025-11-03 16:38:26,252:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 16:38:26,252:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 16:38:26,252:INFO:common: created directories at: artifacts]
+[2025-11-03 16:38:26,252:INFO:common: created directories at: artifacts\training]
+[2025-11-03 16:42:49,709:INFO:main:>>>>>> Stage Training completed <<<<<<
+
+x============x]
+[2025-11-03 16:42:49,709:INFO:main:********************************]
+[2025-11-03 16:42:49,709:INFO:main:>>>>>> Stage Evaluation stage started <<<<<<]
+[2025-11-03 16:42:49,719:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 16:42:49,725:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 16:42:49,727:INFO:common: created directories at: artifacts]
+[2025-11-03 16:43:25,690:INFO:common:json file saved at: scores.json]
+[2025-11-03 16:43:31,020:WARNING:save:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2025-11-03 16:43:33,172:INFO:builder_impl:Assets written to: C:\Users\ANKUR\AppData\Local\Temp\tmpwe9az6qo\model\data\model\assets]
+[2025-11-03 16:44:10,718:ERROR:main:No module named 'distutils._modified']
+Traceback (most recent call last):
+  File "C:\ankur\DL end 2 end project\kidney-Disease-Classification-Using-MLflow-DVC\main.py", line 48, in <module>
+    model_trainer.main()
+  File "c:\ankur\dl end 2 end project\kidney-disease-classification-using-mlflow-dvc\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 17, in main
+    evaluation.log_into_mlflow()
+  File "c:\ankur\dl end 2 end project\kidney-disease-classification-using-mlflow-dvc\src\cnnClassifier\components\model_evaluation_mlflow.py", line 73, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model")
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tensorflow\__init__.py", line 222, in log_model
+    return Model.log(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\models\model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\store\artifact\local_artifact_repo.py", line 58, in log_artifacts
+    dir_util.copy_tree(src=local_dir, dst=artifact_dir, preserve_mode=0, preserve_times=0)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\setuptools\_distutils\dir_util.py", line 150, in copy_tree
+    return list(itertools.chain.from_iterable(map(copy_one, names)))
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\setuptools\_distutils\dir_util.py", line 192, in _copy_one
+    file_util.copy_file(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\setuptools\_distutils\file_util.py", line 104, in copy_file
+    from distutils._modified import newer
+ModuleNotFoundError: No module named 'distutils._modified'
+[2025-11-03 17:52:15,497:INFO:main:>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2025-11-03 17:52:15,497:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 17:52:15,511:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 17:52:15,511:INFO:common: created directories at: artifacts]
+[2025-11-03 17:52:15,511:INFO:common: created directories at: artifacts/data_ingestion]
+[2025-11-03 17:52:15,511:INFO:data_ingestion:downloading data from https://drive.google.com/file/d/1Kc6a9rrEW_PlIsf6SOKn_5hRyy1xztWT/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-03 17:52:23,916:INFO:data_ingestion:download data from https://drive.google.com/file/d/1Kc6a9rrEW_PlIsf6SOKn_5hRyy1xztWT/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-03 17:52:24,452:INFO:main:>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x============x]
+[2025-11-03 17:52:24,452:INFO:main:*******************]
+[2025-11-03 17:52:24,452:INFO:main:>>>>>> Stage Prepare base model started <<<<<<]
+[2025-11-03 17:52:24,455:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 17:52:24,459:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 17:52:24,459:INFO:common: created directories at: artifacts]
+[2025-11-03 17:52:24,461:INFO:common: created directories at: artifacts/prepare_base_model]
+[2025-11-03 17:52:24,963:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-03 17:52:25,153:INFO:main:>>>>>> Stage Prepare base model completed <<<<<<
+
+x============x]
+[2025-11-03 17:52:25,154:INFO:main:********************************]
+[2025-11-03 17:52:25,154:INFO:main:>>>>>> Stage Training started <<<<<<]
+[2025-11-03 17:52:25,155:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 17:52:25,157:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 17:52:25,157:INFO:common: created directories at: artifacts]
+[2025-11-03 17:52:25,157:INFO:common: created directories at: artifacts\training]
+[2025-11-03 17:54:18,782:INFO:main:>>>>>> Stage Training completed <<<<<<
+
+x============x]
+[2025-11-03 17:54:18,783:INFO:main:********************************]
+[2025-11-03 17:54:18,783:INFO:main:>>>>>> Stage Evaluation stage started <<<<<<]
+[2025-11-03 17:54:18,784:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 17:54:18,786:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 17:54:18,786:INFO:common: created directories at: artifacts]
+[2025-11-03 17:54:30,300:INFO:common:json file saved at: scores.json]
+[2025-11-03 17:54:32,135:WARNING:save:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2025-11-03 17:54:32,749:INFO:builder_impl:Assets written to: C:\Users\ANKUR\AppData\Local\Temp\tmpl61u_8aw\model\data\model\assets]
+[2025-11-03 17:54:46,119:INFO:main:>>>>>> Stage Evaluation stage completed <<<<<<
+
+x============x]
+[2025-11-03 18:14:35,389:INFO:main:>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2025-11-03 18:14:35,402:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 18:14:35,402:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 18:14:35,402:INFO:common: created directories at: artifacts]
+[2025-11-03 18:14:35,402:INFO:common: created directories at: artifacts/data_ingestion]
+[2025-11-03 18:14:35,402:INFO:data_ingestion:downloading data from https://drive.google.com/file/d/1Kc6a9rrEW_PlIsf6SOKn_5hRyy1xztWT/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-03 18:14:42,954:INFO:data_ingestion:download data from https://drive.google.com/file/d/1Kc6a9rrEW_PlIsf6SOKn_5hRyy1xztWT/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-03 18:14:43,472:INFO:main:>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x============x]
+[2025-11-03 18:14:43,472:INFO:main:*******************]
+[2025-11-03 18:14:43,472:INFO:main:>>>>>> Stage Prepare base model started <<<<<<]
+[2025-11-03 18:14:43,474:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 18:14:43,475:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 18:14:43,476:INFO:common: created directories at: artifacts]
+[2025-11-03 18:14:43,476:INFO:common: created directories at: artifacts/prepare_base_model]
+[2025-11-03 18:14:44,001:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-03 18:14:44,198:INFO:main:>>>>>> Stage Prepare base model completed <<<<<<
+
+x============x]
+[2025-11-03 18:14:44,198:INFO:main:********************************]
+[2025-11-03 18:14:44,198:INFO:main:>>>>>> Stage Training started <<<<<<]
+[2025-11-03 18:14:44,198:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 18:14:44,198:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 18:14:44,198:INFO:common: created directories at: artifacts]
+[2025-11-03 18:14:44,198:INFO:common: created directories at: artifacts\training]
+[2025-11-03 18:16:02,816:INFO:main:>>>>>> Stage Training completed <<<<<<
+
+x============x]
+[2025-11-03 18:16:02,816:INFO:main:********************************]
+[2025-11-03 18:16:02,816:INFO:main:>>>>>> Stage Evaluation stage started <<<<<<]
+[2025-11-03 18:16:02,816:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 18:16:02,824:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 18:16:02,824:INFO:common: created directories at: artifacts]
+[2025-11-03 18:16:14,666:INFO:common:json file saved at: scores.json]
+[2025-11-03 18:16:16,291:WARNING:save:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2025-11-03 18:16:16,714:INFO:builder_impl:Assets written to: C:\Users\ANKUR\AppData\Local\Temp\tmp6o7et7r8\model\data\model\assets]
+[2025-11-03 18:16:26,863:INFO:main:>>>>>> Stage Evaluation stage completed <<<<<<
+
+x============x]
+[2025-11-03 18:26:35,749:INFO:main:>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2025-11-03 18:26:35,750:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 18:26:35,759:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 18:26:35,759:INFO:common: created directories at: artifacts]
+[2025-11-03 18:26:35,759:INFO:common: created directories at: artifacts/data_ingestion]
+[2025-11-03 18:26:35,759:INFO:data_ingestion:downloading data from https://drive.google.com/file/d/1Kc6a9rrEW_PlIsf6SOKn_5hRyy1xztWT/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-03 18:26:42,205:INFO:data_ingestion:download data from https://drive.google.com/file/d/1Kc6a9rrEW_PlIsf6SOKn_5hRyy1xztWT/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-03 18:26:42,697:INFO:main:>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x============x]
+[2025-11-03 18:26:42,697:INFO:main:*******************]
+[2025-11-03 18:26:42,697:INFO:main:>>>>>> Stage Prepare base model started <<<<<<]
+[2025-11-03 18:26:42,697:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 18:26:42,697:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 18:26:42,697:INFO:common: created directories at: artifacts]
+[2025-11-03 18:26:42,697:INFO:common: created directories at: artifacts/prepare_base_model]
+[2025-11-03 18:26:43,135:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-03 18:26:43,323:INFO:main:>>>>>> Stage Prepare base model completed <<<<<<
+
+x============x]
+[2025-11-03 18:26:43,323:INFO:main:********************************]
+[2025-11-03 18:26:43,323:INFO:main:>>>>>> Stage Training started <<<<<<]
+[2025-11-03 18:26:43,323:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 18:26:43,323:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 18:26:43,323:INFO:common: created directories at: artifacts]
+[2025-11-03 18:26:43,323:INFO:common: created directories at: artifacts\training]
+[2025-11-03 18:27:59,717:INFO:main:>>>>>> Stage Training completed <<<<<<
+
+x============x]
+[2025-11-03 18:27:59,717:INFO:main:********************************]
+[2025-11-03 18:27:59,717:INFO:main:>>>>>> Stage Evaluation stage started <<<<<<]
+[2025-11-03 18:27:59,733:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 18:27:59,734:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 18:27:59,735:INFO:common: created directories at: artifacts]
+[2025-11-03 18:28:11,403:INFO:common:json file saved at: scores.json]
+[2025-11-03 18:28:13,510:ERROR:main:API request to endpoint /api/2.0/mlflow/runs/create failed with error code 401 != 200. Response body: '=============== ATTENTION! ===============
+
+To use authentication, you must first: 
+    Get your default access token from: https://dagshub.com/user/settings/tokens
+    OR 
+    Set a password: https://dagshub.com/user/settings/password 
+==========================================']
+Traceback (most recent call last):
+  File "C:\ankur\DL end 2 end project\kidney-Disease-Classification-Using-MLflow-DVC\main.py", line 48, in <module>
+    model_trainer.main()
+  File "c:\ankur\dl end 2 end project\kidney-disease-classification-using-mlflow-dvc\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 17, in main
+    evaluation.log_into_mlflow()
+  File "c:\ankur\dl end 2 end project\kidney-disease-classification-using-mlflow-dvc\src\cnnClassifier\components\model_evaluation_mlflow.py", line 59, in log_into_mlflow
+    with mlflow.start_run():
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 475, in start_run
+    active_run_obj = client.create_run(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 479, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\telemetry\track.py", line 30, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 183, in create_run
+    return self.store.create_run(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 338, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 201, in _call_endpoint
+    return call_endpoint(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 592, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 317, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 401 != 200. Response body: '=============== ATTENTION! ===============
+
+To use authentication, you must first: 
+    Get your default access token from: https://dagshub.com/user/settings/tokens
+    OR 
+    Set a password: https://dagshub.com/user/settings/password 
+=========================================='
+[2025-11-03 18:36:45,388:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 18:36:45,391:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 18:36:45,392:INFO:common: created directories at: artifacts]
+[2025-11-03 18:38:33,670:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 18:38:33,673:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 18:38:33,675:INFO:common: created directories at: artifacts]
+[2025-11-03 18:39:54,943:INFO:main:>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2025-11-03 18:39:54,944:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 18:39:54,947:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 18:39:54,947:INFO:common: created directories at: artifacts]
+[2025-11-03 18:39:54,947:INFO:common: created directories at: artifacts/data_ingestion]
+[2025-11-03 18:39:54,948:INFO:data_ingestion:downloading data from https://drive.google.com/file/d/1Kc6a9rrEW_PlIsf6SOKn_5hRyy1xztWT/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-03 18:40:00,118:INFO:data_ingestion:download data from https://drive.google.com/file/d/1Kc6a9rrEW_PlIsf6SOKn_5hRyy1xztWT/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-03 18:40:00,679:INFO:main:>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x============x]
+[2025-11-03 18:40:00,681:INFO:main:*******************]
+[2025-11-03 18:40:00,681:INFO:main:>>>>>> Stage Prepare base model started <<<<<<]
+[2025-11-03 18:40:00,683:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 18:40:00,683:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 18:40:00,683:INFO:common: created directories at: artifacts]
+[2025-11-03 18:40:00,683:INFO:common: created directories at: artifacts/prepare_base_model]
+[2025-11-03 18:40:01,113:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-03 18:40:01,356:INFO:main:>>>>>> Stage Prepare base model completed <<<<<<
+
+x============x]
+[2025-11-03 18:40:01,356:INFO:main:********************************]
+[2025-11-03 18:40:01,356:INFO:main:>>>>>> Stage Training started <<<<<<]
+[2025-11-03 18:40:01,360:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 18:40:01,360:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 18:40:01,360:INFO:common: created directories at: artifacts]
+[2025-11-03 18:40:01,360:INFO:common: created directories at: artifacts\training]
+[2025-11-03 18:41:20,088:INFO:main:>>>>>> Stage Training completed <<<<<<
+
+x============x]
+[2025-11-03 18:41:20,088:INFO:main:********************************]
+[2025-11-03 18:41:20,088:INFO:main:>>>>>> Stage Evaluation stage started <<<<<<]
+[2025-11-03 18:41:20,088:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 18:41:20,088:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 18:41:20,088:INFO:common: created directories at: artifacts]
+[2025-11-03 18:41:32,398:INFO:common:json file saved at: scores.json]
+[2025-11-03 18:41:33,947:ERROR:main:API request to endpoint /api/2.0/mlflow/runs/create failed with error code 401 != 200. Response body: '=============== ATTENTION! ===============
+
+To use authentication, you must first: 
+    Get your default access token from: https://dagshub.com/user/settings/tokens
+    OR 
+    Set a password: https://dagshub.com/user/settings/password 
+==========================================']
+Traceback (most recent call last):
+  File "C:\ankur\DL end 2 end project\kidney-Disease-Classification-Using-MLflow-DVC\main.py", line 48, in <module>
+    model_trainer.main()
+  File "c:\ankur\dl end 2 end project\kidney-disease-classification-using-mlflow-dvc\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 17, in main
+    evaluation.log_into_mlflow()
+  File "c:\ankur\dl end 2 end project\kidney-disease-classification-using-mlflow-dvc\src\cnnClassifier\components\model_evaluation_mlflow.py", line 59, in log_into_mlflow
+    with mlflow.start_run():
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 475, in start_run
+    active_run_obj = client.create_run(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 479, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\telemetry\track.py", line 30, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 183, in create_run
+    return self.store.create_run(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 338, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 201, in _call_endpoint
+    return call_endpoint(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 592, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 317, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 401 != 200. Response body: '=============== ATTENTION! ===============
+
+To use authentication, you must first: 
+    Get your default access token from: https://dagshub.com/user/settings/tokens
+    OR 
+    Set a password: https://dagshub.com/user/settings/password 
+=========================================='
+[2025-11-03 18:54:15,475:INFO:main:>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2025-11-03 18:54:15,476:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 18:54:15,479:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 18:54:15,479:INFO:common: created directories at: artifacts]
+[2025-11-03 18:54:15,479:INFO:common: created directories at: artifacts/data_ingestion]
+[2025-11-03 18:54:15,480:INFO:data_ingestion:downloading data from https://drive.google.com/file/d/1Kc6a9rrEW_PlIsf6SOKn_5hRyy1xztWT/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-03 18:54:21,373:INFO:data_ingestion:download data from https://drive.google.com/file/d/1Kc6a9rrEW_PlIsf6SOKn_5hRyy1xztWT/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-03 18:54:22,038:INFO:main:>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x============x]
+[2025-11-03 18:54:22,038:INFO:main:*******************]
+[2025-11-03 18:54:22,038:INFO:main:>>>>>> Stage Prepare base model started <<<<<<]
+[2025-11-03 18:54:22,040:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 18:54:22,041:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 18:54:22,041:INFO:common: created directories at: artifacts]
+[2025-11-03 18:54:22,041:INFO:common: created directories at: artifacts/prepare_base_model]
+[2025-11-03 18:54:22,539:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-03 18:54:22,734:INFO:main:>>>>>> Stage Prepare base model completed <<<<<<
+
+x============x]
+[2025-11-03 18:54:22,734:INFO:main:********************************]
+[2025-11-03 18:54:22,734:INFO:main:>>>>>> Stage Training started <<<<<<]
+[2025-11-03 18:54:22,734:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 18:54:22,734:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 18:54:22,734:INFO:common: created directories at: artifacts]
+[2025-11-03 18:54:22,734:INFO:common: created directories at: artifacts\training]
+[2025-11-03 18:55:39,995:INFO:main:>>>>>> Stage Training completed <<<<<<
+
+x============x]
+[2025-11-03 18:55:39,995:INFO:main:********************************]
+[2025-11-03 18:55:39,995:INFO:main:>>>>>> Stage Evaluation stage started <<<<<<]
+[2025-11-03 18:55:39,995:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 18:55:39,998:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 18:55:39,998:INFO:common: created directories at: artifacts]
+[2025-11-03 18:55:51,524:INFO:common:json file saved at: scores.json]
+[2025-11-03 18:55:56,494:ERROR:main:INTERNAL_ERROR: Response: {'error': 'unsupported endpoint, please contact support@dagshub.com'}]
+Traceback (most recent call last):
+  File "C:\ankur\DL end 2 end project\kidney-Disease-Classification-Using-MLflow-DVC\main.py", line 48, in <module>
+    model_trainer.main()
+  File "c:\ankur\dl end 2 end project\kidney-disease-classification-using-mlflow-dvc\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 17, in main
+    evaluation.log_into_mlflow()
+  File "c:\ankur\dl end 2 end project\kidney-disease-classification-using-mlflow-dvc\src\cnnClassifier\components\model_evaluation_mlflow.py", line 65, in log_into_mlflow
+    mlflow.keras.log_model(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tensorflow\__init__.py", line 229, in log_model
+    return Model.log(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\models\model.py", line 1170, in log
+    model = _create_logged_model(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 2323, in _create_logged_model
+    return MlflowClient()._create_logged_model(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 5492, in _create_logged_model
+    return self._tracking_client.create_logged_model(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\telemetry\track.py", line 30, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 870, in create_logged_model
+    return self.store.create_logged_model(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 894, in create_logged_model
+    response_proto = self._call_endpoint(CreateLoggedModel, req_body)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 201, in _call_endpoint
+    return call_endpoint(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 592, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 311, in verify_rest_response
+    raise RestException(json.loads(response.text))
+mlflow.exceptions.RestException: INTERNAL_ERROR: Response: {'error': 'unsupported endpoint, please contact support@dagshub.com'}
+[2025-11-03 19:02:58,578:INFO:main:>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2025-11-03 19:02:58,581:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 19:02:58,588:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 19:02:58,588:INFO:common: created directories at: artifacts]
+[2025-11-03 19:02:58,588:INFO:common: created directories at: artifacts/data_ingestion]
+[2025-11-03 19:02:58,588:INFO:data_ingestion:downloading data from https://drive.google.com/file/d/1Kc6a9rrEW_PlIsf6SOKn_5hRyy1xztWT/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-03 19:03:04,510:INFO:data_ingestion:download data from https://drive.google.com/file/d/1Kc6a9rrEW_PlIsf6SOKn_5hRyy1xztWT/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-03 19:03:05,027:INFO:main:>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x============x]
+[2025-11-03 19:03:05,027:INFO:main:*******************]
+[2025-11-03 19:03:05,027:INFO:main:>>>>>> Stage Prepare base model started <<<<<<]
+[2025-11-03 19:03:05,027:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 19:03:05,027:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 19:03:05,027:INFO:common: created directories at: artifacts]
+[2025-11-03 19:03:05,027:INFO:common: created directories at: artifacts/prepare_base_model]
+[2025-11-03 19:03:05,462:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-03 19:03:05,651:INFO:main:>>>>>> Stage Prepare base model completed <<<<<<
+
+x============x]
+[2025-11-03 19:03:05,651:INFO:main:********************************]
+[2025-11-03 19:03:05,651:INFO:main:>>>>>> Stage Training started <<<<<<]
+[2025-11-03 19:03:05,653:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 19:03:05,654:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 19:03:05,654:INFO:common: created directories at: artifacts]
+[2025-11-03 19:03:05,655:INFO:common: created directories at: artifacts\training]
+[2025-11-03 19:03:44,883:INFO:main:>>>>>> Stage Training completed <<<<<<
+
+x============x]
+[2025-11-03 19:03:44,883:INFO:main:********************************]
+[2025-11-03 19:03:44,883:INFO:main:>>>>>> Stage Evaluation stage started <<<<<<]
+[2025-11-03 19:03:44,883:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-03 19:03:44,883:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-03 19:03:44,883:INFO:common: created directories at: artifacts]
+[2025-11-03 19:03:56,637:INFO:common:json file saved at: scores.json]
+[2025-11-03 19:05:20,467:INFO:main:>>>>>> Stage Evaluation stage completed <<<<<<
+
+x============x]

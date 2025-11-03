@@ -63,11 +63,9 @@ class Evaluation:
             )
             # Model registry does not work with file store
             if tracking_url_type_store != "file":
-
-                # Register the model
-                # There are other ways to use the Model Registry, which depends on the use case,
-                # please refer to the doc for more information:
-                # https://mlflow.org/docs/latest/model-registry.html#api-workflow
-                mlflow.keras.log_model(self.model, "model", registered_model_name="VGG16Model")
+    # DagsHub does not support model registry, so log as artifact manually
+                self.model.save("model.h5")
+                mlflow.log_artifact("model.h5", artifact_path="model")
             else:
                 mlflow.keras.log_model(self.model, "model")
+

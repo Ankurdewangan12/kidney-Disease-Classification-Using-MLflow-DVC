@@ -1,0 +1,10 @@
+artifact_location: file:///C:/ankur/DL%20end%202%20end%20project/kidney-Disease-Classification-Using-MLflow-DVC/mlruns/0/models/m-5c870cc3db754a3b987aa068a97a9cb3/artifacts
+creation_timestamp: 1762172671092
+experiment_id: '0'
+last_updated_timestamp: 1762172686104
+model_id: m-5c870cc3db754a3b987aa068a97a9cb3
+model_type: null
+name: model
+source_run_id: 81c4e370202d4dfabfb17309c3fb79a6
+status: 2
+status_message: null

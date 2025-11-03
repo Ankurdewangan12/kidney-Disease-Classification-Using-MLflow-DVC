@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/ankur/DL%20end%202%20end%20project/kidney-Disease-Classification-Using-MLflow-DVC/mlruns/0/cf7c7d910b2649869d718e3432ca8a1e/artifacts
+end_time: 1762173986861
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cf7c7d910b2649869d718e3432ca8a1e
+run_name: resilient-foal-560
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762173975182
+status: 3
+tags: []
+user_id: ANKUR

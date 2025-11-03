@@ -1,0 +1,22 @@
+artifact_path: file:///C:/ankur/DL%20end%202%20end%20project/kidney-Disease-Classification-Using-MLflow-DVC/mlruns/0/models/m-1ab47f5c9d824283b266cf2c75a2aea2/artifacts
+flavors:
+  python_function:
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.tensorflow
+    python_version: 3.10.18
+  tensorflow:
+    code: null
+    data: data
+    keras_version: 2.12.0
+    model_type: keras
+    save_format: tf
+mlflow_version: 3.5.1
+model_id: m-1ab47f5c9d824283b266cf2c75a2aea2
+model_size_bytes: 59656697
+model_uuid: m-1ab47f5c9d824283b266cf2c75a2aea2
+prompts: null
+run_id: cf7c7d910b2649869d718e3432ca8a1e
+utc_time_created: '2025-11-03 12:46:15.343235'
