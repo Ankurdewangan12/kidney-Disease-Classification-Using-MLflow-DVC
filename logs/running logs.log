@@ -741,3 +741,313 @@ x============x]
 [2025-11-04 02:39:19,793:INFO:main:>>>>>> Stage Evaluation stage completed <<<<<<
 
 x============x]
+[2025-11-05 22:48:33,807:INFO:stage_01_data_ingestion:>>>>>> Stage  Data Ingestion Stage started <<<<<<]
+[2025-11-05 22:48:33,807:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-05 22:48:33,807:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-05 22:48:33,807:INFO:common: created directories at: artifacts]
+[2025-11-05 22:48:33,807:INFO:common: created directories at: artifacts/data_ingestion]
+[2025-11-05 22:48:33,807:INFO:data_ingestion:downloading data from https://drive.google.com/file/d/1Kc6a9rrEW_PlIsf6SOKn_5hRyy1xztWT/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-05 22:48:43,308:INFO:data_ingestion:download data from https://drive.google.com/file/d/1Kc6a9rrEW_PlIsf6SOKn_5hRyy1xztWT/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-11-05 22:48:45,450:INFO:stage_01_data_ingestion:>>>>>> Stage  Data Ingestion Stage completed <<<<<<
+
+x============x]
+[2025-11-05 23:03:54,637:INFO:stage_02_prepare_base_model:*******************]
+[2025-11-05 23:03:54,637:INFO:stage_02_prepare_base_model:>>>>>> Stage Prepare base model started <<<<<<]
+[2025-11-05 23:03:54,651:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-05 23:03:54,651:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-05 23:03:54,653:INFO:common: created directories at: artifacts]
+[2025-11-05 23:03:54,653:INFO:common: created directories at: artifacts/prepare_base_model]
+[2025-11-05 23:03:55,334:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-11-05 23:03:55,601:INFO:stage_02_prepare_base_model:>>>>>> Stage Prepare base model completed <<<<<<
+
+x============x]
+[2025-11-05 23:04:02,868:INFO:stage_03_model_training:********************************]
+[2025-11-05 23:04:02,868:INFO:stage_03_model_training:>>>>>> Stage Training started <<<<<<]
+[2025-11-05 23:04:02,868:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-05 23:04:02,868:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-05 23:04:02,868:INFO:common: created directories at: artifacts]
+[2025-11-05 23:04:02,868:INFO:common: created directories at: artifacts\training]
+[2025-11-05 23:37:04,445:INFO:stage_03_model_training:>>>>>> Stage Training completed <<<<<<
+
+x============x]
+[2025-11-05 23:37:11,072:INFO:stage_04_model_evaluation:********************************]
+[2025-11-05 23:37:11,072:INFO:stage_04_model_evaluation:>>>>>> Stage Evaluation stage started <<<<<<]
+[2025-11-05 23:37:11,075:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-05 23:37:11,076:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-05 23:37:11,076:INFO:common: created directories at: artifacts]
+[2025-11-05 23:37:22,698:INFO:common:json file saved at: scores.json]
+[2025-11-05 23:37:24,774:ERROR:stage_04_model_evaluation:API request to endpoint /api/2.0/mlflow/runs/create failed with error code 401 != 200. Response body: '=============== ATTENTION! ===============
+
+To use authentication, you must first: 
+    Get your default access token from: https://dagshub.com/user/settings/tokens
+    OR 
+    Set a password: https://dagshub.com/user/settings/password 
+==========================================']
+Traceback (most recent call last):
+  File "C:\ankur\DL end 2 end project\kidney-Disease-Classification-Using-MLflow-DVC\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 25, in <module>
+    model_trainer.main()
+  File "C:\ankur\DL end 2 end project\kidney-Disease-Classification-Using-MLflow-DVC\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 17, in main
+    evaluation.log_into_mlflow()
+  File "c:\ankur\dl end 2 end project\kidney-disease-classification-using-mlflow-dvc\src\cnnClassifier\components\model_evaluation_mlflow.py", line 59, in log_into_mlflow
+    with mlflow.start_run():
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 475, in start_run
+    active_run_obj = client.create_run(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 479, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\telemetry\track.py", line 30, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 183, in create_run
+    return self.store.create_run(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 338, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 201, in _call_endpoint
+    return call_endpoint(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 592, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 317, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 401 != 200. Response body: '=============== ATTENTION! ===============
+
+To use authentication, you must first: 
+    Get your default access token from: https://dagshub.com/user/settings/tokens
+    OR 
+    Set a password: https://dagshub.com/user/settings/password 
+=========================================='
+[2025-11-06 00:01:21,539:INFO:stage_04_model_evaluation:********************************]
+[2025-11-06 00:01:21,539:INFO:stage_04_model_evaluation:>>>>>> Stage Evaluation stage started <<<<<<]
+[2025-11-06 00:01:21,539:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-06 00:01:21,539:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-06 00:01:21,539:INFO:common: created directories at: artifacts]
+[2025-11-06 00:01:33,304:INFO:common:json file saved at: scores.json]
+[2025-11-06 00:01:34,899:ERROR:stage_04_model_evaluation:API request to endpoint /api/2.0/mlflow/runs/create failed with error code 401 != 200. Response body: '=============== ATTENTION! ===============
+
+To use authentication, you must first: 
+    Get your default access token from: https://dagshub.com/user/settings/tokens
+    OR 
+    Set a password: https://dagshub.com/user/settings/password 
+==========================================']
+Traceback (most recent call last):
+  File "C:\ankur\DL end 2 end project\kidney-Disease-Classification-Using-MLflow-DVC\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 25, in <module>
+    model_trainer.main()
+  File "C:\ankur\DL end 2 end project\kidney-Disease-Classification-Using-MLflow-DVC\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 17, in main
+    evaluation.log_into_mlflow()
+  File "c:\ankur\dl end 2 end project\kidney-disease-classification-using-mlflow-dvc\src\cnnClassifier\components\model_evaluation_mlflow.py", line 59, in log_into_mlflow
+    with mlflow.start_run():
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 475, in start_run
+    active_run_obj = client.create_run(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 479, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\telemetry\track.py", line 30, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 183, in create_run
+    return self.store.create_run(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 338, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 201, in _call_endpoint
+    return call_endpoint(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 592, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 317, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 401 != 200. Response body: '=============== ATTENTION! ===============
+
+To use authentication, you must first: 
+    Get your default access token from: https://dagshub.com/user/settings/tokens
+    OR 
+    Set a password: https://dagshub.com/user/settings/password 
+=========================================='
+[2025-11-06 00:05:47,308:INFO:stage_04_model_evaluation:********************************]
+[2025-11-06 00:05:47,309:INFO:stage_04_model_evaluation:>>>>>> Stage Evaluation stage started <<<<<<]
+[2025-11-06 00:05:47,311:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-06 00:05:47,312:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-06 00:05:47,313:INFO:common: created directories at: artifacts]
+[2025-11-06 00:05:58,755:INFO:common:json file saved at: scores.json]
+[2025-11-06 00:06:00,178:ERROR:stage_04_model_evaluation:API request to endpoint /api/2.0/mlflow/runs/create failed with error code 401 != 200. Response body: '=============== ATTENTION! ===============
+
+To use authentication, you must first: 
+    Get your default access token from: https://dagshub.com/user/settings/tokens
+    OR 
+    Set a password: https://dagshub.com/user/settings/password 
+==========================================']
+Traceback (most recent call last):
+  File "C:\ankur\DL end 2 end project\kidney-Disease-Classification-Using-MLflow-DVC\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 25, in <module>
+    model_trainer.main()
+  File "C:\ankur\DL end 2 end project\kidney-Disease-Classification-Using-MLflow-DVC\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 17, in main
+    evaluation.log_into_mlflow()
+  File "c:\ankur\dl end 2 end project\kidney-disease-classification-using-mlflow-dvc\src\cnnClassifier\components\model_evaluation_mlflow.py", line 59, in log_into_mlflow
+    with mlflow.start_run():
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 475, in start_run
+    active_run_obj = client.create_run(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 479, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\telemetry\track.py", line 30, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 183, in create_run
+    return self.store.create_run(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 338, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 201, in _call_endpoint
+    return call_endpoint(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 592, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 317, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 401 != 200. Response body: '=============== ATTENTION! ===============
+
+To use authentication, you must first: 
+    Get your default access token from: https://dagshub.com/user/settings/tokens
+    OR 
+    Set a password: https://dagshub.com/user/settings/password 
+=========================================='
+[2025-11-06 00:08:14,180:INFO:stage_04_model_evaluation:********************************]
+[2025-11-06 00:08:14,180:INFO:stage_04_model_evaluation:>>>>>> Stage Evaluation stage started <<<<<<]
+[2025-11-06 00:08:14,180:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-06 00:08:14,180:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-06 00:08:14,180:INFO:common: created directories at: artifacts]
+[2025-11-06 00:08:25,693:INFO:common:json file saved at: scores.json]
+[2025-11-06 00:08:27,538:ERROR:stage_04_model_evaluation:API request to endpoint /api/2.0/mlflow/runs/create failed with error code 401 != 200. Response body: '=============== ATTENTION! ===============
+
+To use authentication, you must first: 
+    Get your default access token from: https://dagshub.com/user/settings/tokens
+    OR 
+    Set a password: https://dagshub.com/user/settings/password 
+==========================================']
+Traceback (most recent call last):
+  File "C:\ankur\DL end 2 end project\kidney-Disease-Classification-Using-MLflow-DVC\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 25, in <module>
+    model_trainer.main()
+  File "C:\ankur\DL end 2 end project\kidney-Disease-Classification-Using-MLflow-DVC\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 17, in main
+    evaluation.log_into_mlflow()
+  File "c:\ankur\dl end 2 end project\kidney-disease-classification-using-mlflow-dvc\src\cnnClassifier\components\model_evaluation_mlflow.py", line 59, in log_into_mlflow
+    with mlflow.start_run():
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 475, in start_run
+    active_run_obj = client.create_run(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 479, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\telemetry\track.py", line 30, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 183, in create_run
+    return self.store.create_run(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 338, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 201, in _call_endpoint
+    return call_endpoint(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 592, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 317, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 401 != 200. Response body: '=============== ATTENTION! ===============
+
+To use authentication, you must first: 
+    Get your default access token from: https://dagshub.com/user/settings/tokens
+    OR 
+    Set a password: https://dagshub.com/user/settings/password 
+=========================================='
+[2025-11-06 00:29:40,149:INFO:stage_04_model_evaluation:********************************]
+[2025-11-06 00:29:40,149:INFO:stage_04_model_evaluation:>>>>>> Stage Evaluation stage started <<<<<<]
+[2025-11-06 00:29:40,149:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-06 00:29:40,149:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-06 00:29:40,149:INFO:common: created directories at: artifacts]
+[2025-11-06 00:30:00,471:INFO:common:json file saved at: scores.json]
+[2025-11-06 00:31:20,539:INFO:stage_04_model_evaluation:>>>>>> Stage Evaluation stage completed <<<<<<
+
+x============x]
+[2025-11-06 00:40:17,223:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.247.39.101:8080]
+[2025-11-06 00:40:17,223:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2025-11-06 00:40:51,375:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:40:51] "GET / HTTP/1.1" 200 -]
+[2025-11-06 00:41:00,922:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\ankur\DL end 2 end project\kidney-Disease-Classification-Using-MLflow-DVC\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\ankur\dl end 2 end project\kidney-disease-classification-using-mlflow-dvc\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2025-11-06 00:41:00,981:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:41:00] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-11-06 00:42:28,826:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:42:28] "GET / HTTP/1.1" 200 -]
+[2025-11-06 00:42:37,000:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\ankur\DL end 2 end project\kidney-Disease-Classification-Using-MLflow-DVC\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\ankur\dl end 2 end project\kidney-disease-classification-using-mlflow-dvc\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\ANKUR\.conda\envs\kidney\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2025-11-06 00:42:37,000:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:42:37] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-11-06 00:49:52,857:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.247.39.101:8080]
+[2025-11-06 00:49:52,857:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2025-11-06 00:50:11,940:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:50:11] "GET / HTTP/1.1" 200 -]
+[2025-11-06 00:50:20,901:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:50:20] "POST /predict HTTP/1.1" 200 -]
+[2025-11-06 00:50:31,682:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:50:31] "POST /predict HTTP/1.1" 200 -]
+[2025-11-06 00:50:35,433:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:50:35] "POST /predict HTTP/1.1" 200 -]
+[2025-11-06 00:50:44,097:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:50:44] "POST /predict HTTP/1.1" 200 -]
+[2025-11-06 00:50:46,773:WARNING:polymorphic_function:5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001C352357EB0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-11-06 00:50:46,777:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:50:46] "POST /predict HTTP/1.1" 200 -]
+[2025-11-06 00:50:56,350:WARNING:polymorphic_function:6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001C3547B4DC0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-11-06 00:50:56,360:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:50:56] "POST /predict HTTP/1.1" 200 -]
+[2025-11-06 00:50:58,762:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:50:58] "POST /predict HTTP/1.1" 200 -]
+[2025-11-06 00:51:33,651:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.247.39.101:8080]
+[2025-11-06 00:51:33,651:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2025-11-06 00:51:43,205:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:51:43] "GET / HTTP/1.1" 200 -]
+[2025-11-06 00:51:52,755:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:51:52] "POST /predict HTTP/1.1" 200 -]
+[2025-11-06 00:51:55,940:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:51:55] "POST /predict HTTP/1.1" 200 -]
+[2025-11-06 00:53:05,171:INFO:stage_03_model_training:********************************]
+[2025-11-06 00:53:05,171:INFO:stage_03_model_training:>>>>>> Stage Training started <<<<<<]
+[2025-11-06 00:53:05,187:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-06 00:53:05,187:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-06 00:53:05,187:INFO:common: created directories at: artifacts]
+[2025-11-06 00:53:05,187:INFO:common: created directories at: artifacts\training]
+[2025-11-06 00:55:29,643:INFO:stage_03_model_training:>>>>>> Stage Training completed <<<<<<
+
+x============x]
+[2025-11-06 00:55:53,519:INFO:stage_04_model_evaluation:********************************]
+[2025-11-06 00:55:53,521:INFO:stage_04_model_evaluation:>>>>>> Stage Evaluation stage started <<<<<<]
+[2025-11-06 00:55:53,531:INFO:common:yaml file: config\config.yaml loaded sucessfully]
+[2025-11-06 00:55:53,537:INFO:common:yaml file: params.yaml loaded sucessfully]
+[2025-11-06 00:55:53,539:INFO:common: created directories at: artifacts]
+[2025-11-06 00:56:14,042:INFO:common:json file saved at: scores.json]
+[2025-11-06 00:57:45,959:INFO:stage_04_model_evaluation:>>>>>> Stage Evaluation stage completed <<<<<<
+
+x============x]

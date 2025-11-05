@@ -65,7 +65,7 @@ open up you local host and port
 
 MLFLOW_TRACKING_URI=https://dagshub.com/Ankurdewangan12/kidney-Disease-Classification-Using-MLflow-DVC.mlflow
 MLFLOW_TRACKING_USERNAME=Ankurdewangan12
-MLFLOW_TRACKING_PASSWORD=cbfc755683c427f18c8e54ab4cd2829788fc84fe
+MLFLOW_TRACKING_PASSWORD=8cfcda7a39b9cba626592a5b46268a2624d246c3
 
 python script.py
 
@@ -73,15 +73,16 @@ Run this to export as env variables:
 
 ```bash
 
-set MLFLOW_TRACKING_URI=https://dagshub.com/Ankurdewangan12/kidney-Disease-Classification-Using-MLflow-DVC.mlflow
+setx MLFLOW_TRACKING_URI "https://dagshub.com/Ankurdewangan12/kidney-Disease-Classification-Using-MLflow-DVC.mlflow"
 
-set MLFLOW_TRACKING_USERNAME=Ankurdewangan12 
+setx MLFLOW_TRACKING_USERNAME "Ankurdewangan12"
 
-set MLFLOW_TRACKING_PASSWORD=cbfc755683c427f18c8e54ab4cd2829788fc84fe
+setx MLFLOW_TRACKING_PASSWORD "8cfcda7a39b9cba626592a5b46268a2624d246c3"
+
 
 
 ```
-
+<h4> The MLFLOW_TRACKING_PASSWORD (access token) i have to generate before running DVC or MLflow commands</h4>
 ### DVC cmd
 
 1. dvc init

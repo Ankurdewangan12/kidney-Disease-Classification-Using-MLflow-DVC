@@ -1,0 +1,4 @@
+[core]
+    remote = origin
+['remote "origin"']
+    url = https://dagshub.com/Ankurdewangan12/kidney-Disease-Classification-Using-MLflow-DVC.dvc
