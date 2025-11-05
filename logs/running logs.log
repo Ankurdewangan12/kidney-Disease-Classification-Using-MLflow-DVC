@@ -1051,3 +1051,22 @@ x============x]
 [2025-11-06 00:57:45,959:INFO:stage_04_model_evaluation:>>>>>> Stage Evaluation stage completed <<<<<<
 
 x============x]
+[2025-11-06 00:58:09,809:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.247.39.101:8080]
+[2025-11-06 00:58:09,811:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2025-11-06 00:58:21,888:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:58:21] "GET / HTTP/1.1" 200 -]
+[2025-11-06 00:58:22,863:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:58:22] "GET / HTTP/1.1" 200 -]
+[2025-11-06 00:58:32,405:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:58:32] "POST /predict HTTP/1.1" 200 -]
+[2025-11-06 00:58:41,370:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:58:41] "POST /predict HTTP/1.1" 200 -]
+[2025-11-06 00:58:49,820:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:58:49] "POST /predict HTTP/1.1" 200 -]
+[2025-11-06 00:58:58,468:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:58:58] "POST /predict HTTP/1.1" 200 -]
+[2025-11-06 00:59:06,750:WARNING:polymorphic_function:5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000002383ECCBE20> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-11-06 00:59:06,750:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:59:06] "POST /predict HTTP/1.1" 200 -]
+[2025-11-06 00:59:15,193:WARNING:polymorphic_function:6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000023840160CA0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-11-06 00:59:15,199:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:59:15] "POST /predict HTTP/1.1" 200 -]
+[2025-11-06 00:59:17,866:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:59:17] "POST /predict HTTP/1.1" 200 -]
+[2025-11-06 00:59:26,660:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:59:26] "POST /predict HTTP/1.1" 200 -]
+[2025-11-06 00:59:35,363:INFO:_internal:127.0.0.1 - - [06/Nov/2025 00:59:35] "POST /predict HTTP/1.1" 200 -]
+[2025-11-06 01:00:00,732:INFO:_internal:127.0.0.1 - - [06/Nov/2025 01:00:00] "POST /predict HTTP/1.1" 200 -]
