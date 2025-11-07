@@ -1078,3 +1078,67 @@ x============x]
 [2025-11-06 01:54:14,103:INFO:_internal:127.0.0.1 - - [06/Nov/2025 01:54:14] "GET / HTTP/1.1" 200 -]
 [2025-11-06 01:54:27,531:INFO:_internal:127.0.0.1 - - [06/Nov/2025 01:54:27] "POST /predict HTTP/1.1" 200 -]
 [2025-11-06 01:54:36,525:INFO:_internal:127.0.0.1 - - [06/Nov/2025 01:54:36] "POST /predict HTTP/1.1" 200 -]
+[2025-11-07 20:30:38,610:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.20.10.2:8080]
+[2025-11-07 20:30:38,611:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2025-11-07 20:30:46,761:INFO:_internal:127.0.0.1 - - [07/Nov/2025 20:30:46] "GET / HTTP/1.1" 200 -]
+[2025-11-07 20:30:57,133:INFO:_internal:127.0.0.1 - - [07/Nov/2025 20:30:57] "POST /predict HTTP/1.1" 200 -]
+[2025-11-07 20:31:23,227:INFO:_internal:127.0.0.1 - - [07/Nov/2025 20:31:23] "POST /predict HTTP/1.1" 200 -]
+[2025-11-07 20:31:32,677:INFO:_internal:127.0.0.1 - - [07/Nov/2025 20:31:32] "POST /predict HTTP/1.1" 200 -]
+[2025-11-07 20:53:55,207:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.247.39.101:8080]
+[2025-11-07 20:53:55,208:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2025-11-07 20:54:01,198:INFO:_internal:127.0.0.1 - - [07/Nov/2025 20:54:01] "GET / HTTP/1.1" 200 -]
+[2025-11-07 20:54:10,836:INFO:_internal:127.0.0.1 - - [07/Nov/2025 20:54:10] "POST /predict HTTP/1.1" 200 -]
+[2025-11-07 20:54:28,377:INFO:_internal:127.0.0.1 - - [07/Nov/2025 20:54:28] "POST /predict HTTP/1.1" 200 -]
+[2025-11-07 21:33:10,861:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.247.39.101:8080]
+[2025-11-07 21:33:10,861:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2025-11-07 21:33:17,556:INFO:_internal:127.0.0.1 - - [07/Nov/2025 21:33:17] "GET / HTTP/1.1" 200 -]
+[2025-11-07 21:34:00,074:INFO:_internal:127.0.0.1 - - [07/Nov/2025 21:34:00] "POST /predict HTTP/1.1" 200 -]
+[2025-11-07 21:34:39,347:INFO:_internal:127.0.0.1 - - [07/Nov/2025 21:34:39] "POST /predict HTTP/1.1" 200 -]
+[2025-11-07 21:38:02,518:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.247.39.101:8080]
+[2025-11-07 21:38:02,518:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2025-11-07 21:38:08,137:INFO:_internal:127.0.0.1 - - [07/Nov/2025 21:38:08] "GET / HTTP/1.1" 200 -]
+[2025-11-07 21:38:21,382:INFO:_internal:127.0.0.1 - - [07/Nov/2025 21:38:21] "POST /predict HTTP/1.1" 200 -]
+[2025-11-07 21:38:36,917:INFO:_internal:127.0.0.1 - - [07/Nov/2025 21:38:36] "POST /predict HTTP/1.1" 200 -]
+[2025-11-07 21:46:29,810:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.247.39.101:8080]
+[2025-11-07 21:46:29,810:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2025-11-07 21:46:31,842:INFO:_internal:127.0.0.1 - - [07/Nov/2025 21:46:31] "GET / HTTP/1.1" 200 -]
+[2025-11-07 21:46:49,606:INFO:_internal:127.0.0.1 - - [07/Nov/2025 21:46:49] "POST /predict HTTP/1.1" 200 -]
+[2025-11-07 21:47:10,064:INFO:_internal:127.0.0.1 - - [07/Nov/2025 21:47:10] "POST /predict HTTP/1.1" 200 -]
+[2025-11-07 21:55:15,247:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.247.39.101:8080]
+[2025-11-07 21:55:15,247:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2025-11-07 21:55:21,099:INFO:_internal:127.0.0.1 - - [07/Nov/2025 21:55:21] "GET / HTTP/1.1" 200 -]
+[2025-11-07 21:55:34,794:INFO:_internal:127.0.0.1 - - [07/Nov/2025 21:55:34] "POST /predict HTTP/1.1" 200 -]
+[2025-11-07 21:55:50,322:INFO:_internal:127.0.0.1 - - [07/Nov/2025 21:55:50] "POST /predict HTTP/1.1" 200 -]
+[2025-11-07 22:08:12,753:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.247.39.101:8080]
+[2025-11-07 22:08:12,753:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2025-11-07 22:08:20,502:INFO:_internal:127.0.0.1 - - [07/Nov/2025 22:08:20] "GET / HTTP/1.1" 200 -]
+[2025-11-07 22:08:36,205:INFO:_internal:127.0.0.1 - - [07/Nov/2025 22:08:36] "POST /predict HTTP/1.1" 200 -]
+[2025-11-07 22:08:46,581:INFO:_internal:127.0.0.1 - - [07/Nov/2025 22:08:46] "POST /predict HTTP/1.1" 200 -]
+[2025-11-07 22:11:18,998:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.247.39.101:8080]
+[2025-11-07 22:11:18,998:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2025-11-07 22:11:24,475:INFO:_internal:127.0.0.1 - - [07/Nov/2025 22:11:24] "GET / HTTP/1.1" 200 -]
+[2025-11-07 22:11:40,156:INFO:_internal:127.0.0.1 - - [07/Nov/2025 22:11:40] "POST /predict HTTP/1.1" 200 -]
